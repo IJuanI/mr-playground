@@ -1052,7 +1052,10 @@ MonoBehaviour:
   PrefabsToSpawn:
   - Labels: 8
     Prefabs:
+    - {fileID: 8345261003054825532, guid: 6a1d72cf760b08545957ad1bb58777ae, type: 3}
     - {fileID: 5338070255219865951, guid: 4339652047eca8b47a11351af9e6a731, type: 3}
+    - {fileID: 3871805817807854655, guid: 7e9eb93f8ec56bd489ca5d6d8702bcda, type: 3}
+    - {fileID: 5523146882049308868, guid: 612b556b2d8e47f42b89e666eb9c2ef6, type: 3}
     - {fileID: 4925417314509356932, guid: 3974d7351d439bd42a05a55178617a69, type: 3}
     PrefabSelection: 2
     MatchAspectRatio: 1
@@ -21753,9 +21756,9 @@ SceneRoots:
   - {fileID: 923524686}
   - {fileID: 525146418}
   - {fileID: 1362481268}
+  - {fileID: 1146681163}
+  - {fileID: 1633144773}
   - {fileID: 1591444831}
   - {fileID: 128138976}
   - {fileID: 51527517}
   - {fileID: 1088148164}
-  - {fileID: 1146681163}
-  - {fileID: 1633144773}
