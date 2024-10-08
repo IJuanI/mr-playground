@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoubleSize
       objectReference: {fileID: 0}
+    - target: {fileID: 4691986454879238211, guid: 30f39fa417b14a04c97a95818d6415b4, type: 3}
+      propertyPath: m_TagString
+      value: BaseModel
+      objectReference: {fileID: 0}
     - target: {fileID: 5356636477305725689, guid: 30f39fa417b14a04c97a95818d6415b4, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.14045

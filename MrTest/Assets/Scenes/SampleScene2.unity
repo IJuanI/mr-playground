@@ -1052,10 +1052,7 @@ MonoBehaviour:
   PrefabsToSpawn:
   - Labels: 8
     Prefabs:
-    - {fileID: 8345261003054825532, guid: 6a1d72cf760b08545957ad1bb58777ae, type: 3}
     - {fileID: 5338070255219865951, guid: 4339652047eca8b47a11351af9e6a731, type: 3}
-    - {fileID: 3871805817807854655, guid: 7e9eb93f8ec56bd489ca5d6d8702bcda, type: 3}
-    - {fileID: 5523146882049308868, guid: 612b556b2d8e47f42b89e666eb9c2ef6, type: 3}
     - {fileID: 4925417314509356932, guid: 3974d7351d439bd42a05a55178617a69, type: 3}
     PrefabSelection: 2
     MatchAspectRatio: 1
@@ -11037,7 +11034,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1146681161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13167,7 +13164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a07d5d10251915478347131c5a6ebe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _meshPrefab: {fileID: 8999845180316542267, guid: 2d6ac3b9dfc2b44458e32bd44afc2cfa, type: 3}
+  _meshPrefab: {fileID: 8999845180316542267, guid: d424d24c4433a1140aeae6fe59a2151f, type: 3}
 --- !u!114 &1318994973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13571,9 +13568,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnOnStart: 1
-  MeshMaterial: {fileID: 2100000, guid: 599b01c5f1d17436c89b88cc04257314, type: 2}
+  MeshMaterial: {fileID: 0}
   BorderSize: 0
-  Colliders: 1
+  Colliders: 0
   CutHoles: 0
   castShadows: 0
   hideMesh: 1
@@ -16426,7 +16423,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1633144772
 MonoBehaviour:
   m_ObjectHideFlags: 0
