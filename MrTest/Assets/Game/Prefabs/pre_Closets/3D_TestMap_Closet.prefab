@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PivotOffset: {x: 0, y: 0, z: 0}
   ScalingX: 1
-  BorderXNegative: 0.433
+  BorderXNegative: 0.422
   BorderXPositive: 0.428
   ScalingY: 1
   BorderYNegative: 0.511
