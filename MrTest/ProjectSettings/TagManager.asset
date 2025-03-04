@@ -5,6 +5,39 @@ TagManager:
   serializedVersion: 3
   tags:
   - BaseModel
+  - Locomotion
+  - PassThrough
+  - PassThroughButton
+  - LocoButton
+  - LocoText
+  - SuitCase
+  - Destiny
+  - LeftPag
+  - RightPage
+  - Match
+  - BoxMatch
+  - BoxParentMatch
+  - FireOn
+  - FireOff
+  - Radio
+  - Switch
+  - Decoration
+  - MusixBox
+  - CustomPage
+  - Diary
+  - SpawnPoint
+  - SmallDecoration
+  - MediumDecoration
+  - LargeDecoration
+  - match
+  - BigKey
+  - SmallKey
+  - Catalyst
+  - MagicTable
+  - Candle
+  - BellSides
+  - Bell
+  - ExperimentsBook
   layers:
   - Default
   - TransparentFX

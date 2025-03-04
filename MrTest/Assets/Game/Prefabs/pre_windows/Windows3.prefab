@@ -135,7 +135,7 @@ MonoBehaviour:
   BorderXPositive: 0.093
   ScalingY: 1
   BorderYNegative: 0.694
-  BorderYPositive: 0.01
+  BorderYPositive: 0.162
   ScalingZ: 0
   BorderZNegative: 0.339
   BorderZPositive: 0.01

@@ -1,0 +1,13 @@
+El Espectro Triste
+Descripción: Un fantasma melancólico, atrapado en el lugar de su muerte, tal vez esperando un último adiós o el regreso de alguien.
+Comportamiento:
+No es violento al principio, pero sigue al jugador y emite susurros y lamentos.
+Actúa como un obstáculo emocional, llorando o pidiendo ayuda de una manera inquietante.
+Si se le ignora demasiado tiempo, puede volverse agresivo, haciendo que el jugador deba encontrar maneras de “reconfortarlo” para calmarlo.
+/
+El Poltergeist
+Descripción: Esta aparición no suele manifestarse de forma visible, sino que se centra en manipular el entorno. Es caótico y juguetón, pero también impredecible y puede volverse amenazante.
+Comportamiento:
+Mueve y lanza objetos al azar, intenta desorientar al jugador bloqueando pasillos o apagando luces.
+Puede hacer ruidos fuertes para distraer, o activar dispositivos para interrumpir el progreso del jugador.
+Puede ser invulnerable al círculo de sal, pero puede asustarse con ciertos objetos místicos que el jugador encuentra.

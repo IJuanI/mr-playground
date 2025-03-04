@@ -2,16 +2,29 @@ using UnityEngine;
 
 public class ChangeRenderOrder : MonoBehaviour
 {
-    public Material targetMaterial; // Material al que deseas cambiar el order render
+    [SerializeField]bool overrideMaterial;
+    [SerializeField]MeshRenderer meshRenderer;
+    public Material targetMaterial; 
 
-    public int renderQueue = 3000; // Valor del render queue, por ejemplo: 3000 es para Opaque
+    public int renderQueue = 3000;
 
     void Start()
     {
         if (targetMaterial != null)
         {
-            // Cambiar el order de renderizado
-            targetMaterial.renderQueue = renderQueue;
+            if(overrideMaterial)
+            {
+                Material newMat = new(targetMaterial)
+                {
+                    renderQueue = renderQueue
+                };
+                meshRenderer.material = newMat;
+            }
+            else
+            {
+
+                targetMaterial.renderQueue = renderQueue;
+            }
             Debug.Log($"Render queue of {targetMaterial.name} changed to {renderQueue}");
         }
         else

@@ -1,0 +1,13 @@
+Espíritu Vengativo:
+Descripción: Esta es una aparicion llena de ira y en busca de venganza. Se cree que es el producto de una muerte violenta.
+Comportamiento:
+Suele perseguir a las personas de forma obsesiva y es conocido que en ocasiones intenta romper el círculo protector de sal.
+Puede interferir con objetos del entorno, haciendo que caigan o se muevan.
+En ocasiones aparece y desaparece repentinamente, generando mas de un susto a los investigadores.
+/
+Espectro de Sombra:
+Descripción: Un fantasma silencioso que prefiere la oscuridad y las sombras. Casi invisible y siempre en movimiento, se le nota apenas como una figura oscura que se desliza.
+Comportamiento:
+Le gustan los lugares oscuros y generalmente evita el contacto con las personas.
+Puede obstruir el paso a las personas y volverse agresivo, se recomienda portar luz en dichos casos para hacerlo retroceder.
+Suele fortalecerse en la oscuridad.

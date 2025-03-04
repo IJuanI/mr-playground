@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Meta.XR.MRUtilityKit;
@@ -38,37 +39,43 @@ public class PrefabToReality : AnchorPrefabSpawner
         InitializePrefabsRenderers(prefabs);
         GameObject closest = prefabs[0];
         float smallDifference = Mathf.Infinity;
-        float anchorArea = 0;
-        bool isPlane = false;
-        
-        if(anchor.VolumeBounds.HasValue)
-        {
-            Vector3 size = anchor.VolumeBounds.Value.size;
-            anchorArea = size.x*size.y*size.z;
-        }
-        else
-        if(anchor.PlaneRect.HasValue)
-        {
-            anchorArea = anchor.PlaneRect.Value.width * anchor.PlaneRect.Value.height;
-            Debug.Log("ANCHOR AREA IS "+anchorArea + anchor.PlaneRect.Value.size);
-            isPlane = true;
-        }
 
+        float diff = 0;
+        float min;
+        float max;
+        
         for(int i=0;i<prefabsRenders.Count;i++)
         {
             var bounds = prefabsRenders[i].GetComponent<GridSliceResizer>().OriginalMesh.bounds;
             //filtrar la forma del objeto, si es mas largo o ancho que alto el objeto debe ser un mueble horizontal.
             //caso contrario un mueble vertical.
-            if(!isPlane && IsVertical(bounds.size) != IsVertical(anchor.VolumeBounds.Value.size,true))
+            if(!anchor.PlaneRect.HasValue && IsVertical(bounds.size) != IsVertical(anchor.VolumeBounds.Value.size,true))
             {
                 continue;
             }
 
-            float prefabArea = 0;
-            prefabArea = isPlane? bounds.size.x * bounds.size.y : bounds.size.x*bounds.size.y*bounds.size.z;
-            
-            Debug.Log("PREFAB AREA IS "+prefabArea + "PREFAB SIZE IS "+ bounds.size + "prefab is "+prefabs[i].name + isPlane);
-            float diff = Mathf.Abs((float)(anchorArea - prefabArea));
+            //Is Plane.
+            //calculates the multiplication vector to make the prefab bound size the same as the mesh bound
+            //then use the vector to set the prefab wich needs less deformation.
+            if(anchor.PlaneRect.HasValue)
+            {
+                Vector2 size = anchor.PlaneRect.Value.size;
+                Vector2 multipliers = new Vector2(size.x/bounds.size.x,size.y/bounds.size.y);
+
+                min = Mathf.Min(multipliers.x,multipliers.y);
+                max = Mathf.Max(multipliers.x,multipliers.y);
+                diff = max-min;
+            }
+            else
+            {
+
+                Vector3 size = anchor.VolumeBounds.Value.size;
+                Vector3 multipliers = new Vector3(size.x/bounds.size.x,size.z/bounds.size.y,size.y/bounds.size.z);
+
+                min = Mathf.Min(multipliers.x,multipliers.y,multipliers.z);
+                max = Mathf.Max(multipliers.x,multipliers.y,multipliers.z);
+                diff = max-min;
+            }
 
             if(smallDifference > diff)
             {
@@ -83,7 +90,6 @@ public class PrefabToReality : AnchorPrefabSpawner
     void InitializePrefabsRenderers(List<GameObject> prefabs)
     {
         prefabsRenders.Clear();
-        Debug.Log("NAME IS  "+ name);
         for(int i=0; i<prefabs.Count; i++)
         {
             GameObject maxBoundsPrefabs = prefabs[i].GetComponentsInChildren<MeshRenderer>()
@@ -99,6 +105,6 @@ public class PrefabToReality : AnchorPrefabSpawner
 
     bool IsVertical(Vector3 size, bool is_anchor_bound = false)
     {
-        return is_anchor_bound? size.z > size.x && size.z > size.y : size.y > size.x && size.y > size.z;
+        return is_anchor_bound? size.z * 1.3f > size.x && size.z * 1.3f > size.y : size.y * 1.3f > size.x && size.y * 1.3f > size.z;
     }
 }
