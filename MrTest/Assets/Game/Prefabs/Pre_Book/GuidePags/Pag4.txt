@@ -1,0 +1,13 @@
+ El Aparición Repetitiva (Eco del Pasado)
+Descripción: Esta aparición recrea los últimos momentos de su vida, repitiendo patrones de comportamiento y eventos de su pasado.
+Comportamiento:
+Sigue un ciclo específico, como caminar entre ciertas habitaciones o realizar una secuencia de acciones.
+Si el jugador interrumpe su ciclo, el fantasma se vuelve agresivo.
+El jugador puede usar su ciclo repetitivo para predecir sus movimientos y avanzar en el exorcismo sin ser atacado.
+/
+La Aparición Maldita
+Descripción: Esta aparición está vinculada a un objeto o a una maldición específica. Se siente atraída por un objeto en particular que el jugador debe destruir o purificar.
+Comportamiento:
+Persigue al jugador mientras sostenga el objeto o esté en áreas específicas.
+Puede ser muy agresiva si el jugador intenta manipular el objeto al que está vinculada.
+El círculo de sal puede ralentizarla, pero el jugador debe encontrar una forma de “purificar” o destruir el objeto para liberarse de la aparición.

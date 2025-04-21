@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b385a67219e04124197ff8ccd68d5107, type: 3}
+  m_Name: FirstRitual
+  m_EditorClassIdentifier: 
+  steps:
+  - {fileID: 2841826875062943863, guid: 6fffebe9a40a5f94799a538430ce7d47, type: 3}
+  - {fileID: -6971956898541020529, guid: 6d37d0fd00e9cf84cb47464dddbaa282, type: 3}
+  - {fileID: 8446628766445204496, guid: 0c1920e37f14f674e86c26dc84adbdd8, type: 3}

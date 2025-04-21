@@ -1,3 +1,4 @@
+using Meta.XR.MRUtilityKit;
 using UnityEngine;
 
 public class ReScanDataRoom : MonoBehaviour
@@ -8,7 +9,9 @@ public class ReScanDataRoom : MonoBehaviour
         if(rb.linearVelocity.magnitude > value)
         {
             Debug.Log("ENTER IN THE COLLISION"+ transform.position);
+            MRUK.Instance.ClearScene();
             OVRScene.RequestSpaceSetup();
+            MRUK.Instance.LoadSceneFromDevice();
         }
     }
 }

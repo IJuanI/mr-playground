@@ -1,0 +1,13 @@
+El Aparición Infantil
+Descripción: Un espíritu de apariencia infantil que juega con el jugador, pero en un nivel inquietante.
+Comportamiento:
+Tiende a reír y aparecer a la distancia, esperando a que el jugador lo siga o intente interactuar.
+Puede desaparecer cuando se le sigue, apareciendo en otra área para hacer que el jugador se aleje de su objetivo.
+A veces deja pistas ambiguas o notas que pueden ser útiles para la investigación o causar desorientación.
+/
+El Fantasma Guardián
+Descripción: Un espíritu protector, pero agresivo si percibe una amenaza. Tal vez custodia un objeto sagrado o un lugar importante.
+Comportamiento:
+Patrulla ciertas áreas y se enfurece si el jugador intenta acercarse a ciertos objetos o habitaciones.
+Si el jugador insiste en acercarse, puede atacar, y solo se calma si el jugador se aleja o encuentra una forma de pedir "permiso" para entrar.
+Tal vez el jugador debe descubrir una manera de calmarlo, como ofreciendo un objeto de respeto.
